@@ -1,0 +1,11 @@
+namePrefix: prd-
+
+bases:
+- ../../base
+
+patches:
+- replicas.yaml
+- image.yaml
+- env.yaml
+- port.yaml
+- sealed-secrets.yaml
