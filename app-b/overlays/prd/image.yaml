@@ -7,4 +7,4 @@ spec:
     spec:
       containers:
       - name: app-b
-        image: gitopsdemo/app-b:xxx
+        image: gitopsdemo/app-b:63c50ddfd93b03d46526a70c61dddbe1eb0a845a
