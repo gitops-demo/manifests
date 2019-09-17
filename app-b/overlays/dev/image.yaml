@@ -1,0 +1,10 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-b
+spec:
+  template:
+    spec:
+      containers:
+      - name: app-a
+        image: "gitopsdemo/app-a:xxx"

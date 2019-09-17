@@ -1,0 +1,19 @@
+replicaCount: 3
+
+image:
+  repository: gitopsdemo/app-a:xxx
+  pullPolicy: IfNotPresent
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+envVars:
+- name: APPA_PORT
+  value: 8080
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 8080
+

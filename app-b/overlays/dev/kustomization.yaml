@@ -1,0 +1,10 @@
+namePrefix: dev-
+
+bases:
+- ../../base
+
+patches:
+- image.yaml
+- env.yaml
+- port.yaml
+- sealed-secrets.yaml
