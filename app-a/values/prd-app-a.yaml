@@ -1,7 +1,7 @@
 replicaCount: 3
 
 image:
-  repository: gitopsdemo/app-a:bde6213baa11f3181c76293d826cf91c58bbf719
+  repository: gitopsdemo/app-a:2f6283c9043d920abcb02907ef55b904e445edf9
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []
