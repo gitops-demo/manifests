@@ -1,0 +1,10 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-b
+spec:
+  template:
+    spec:
+      containers:
+      - name: app-b
+        image: gitopsdemo/app-b:78a2611ef3ccab0e703e567c3e3e57d03925d789

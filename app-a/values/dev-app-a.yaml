@@ -1,0 +1,21 @@
+replicaCount: 1
+
+image:
+  repository: gitopsdemo/app-a:bde6213baa11f3181c76293d826cf91c58bbf719
+  pullPolicy: IfNotPresent
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+envVars:
+- name: APPA_PORT
+  value: "80"
+- name: APPB_SVC
+  value: "dev-app-b"
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 80
+
